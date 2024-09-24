@@ -7,7 +7,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "rishi/calculator"
+        name: "asrith1158/calculator"
         source: pull
       register: docker_pull_result
 
@@ -20,4 +20,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name calculator rishi/calculator
+      shell: docker run -it -d --name calculator asrith1158/calculator
